@@ -1,23 +1,23 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class BubbleSort {
+public class CountOperation {
     static int counter = 0;
 
     public static void main(String[] args) {
         // Declare the arrays
         int[] arr10 = new int[10];
         int[] arr100 = new int[100];
-        int[] arr1000 = new int[1000];
-        int[] arr10000 = new int[10000];
-        int[] arr100000 = new int[100000];
+        int[] arr1_000 = new int[1_000];
+        int[] arr10_000 = new int[10_000];
+        int[] arr100_000 = new int[100_000];
 
         // Population all the arrays
         populatingArray(arr10, 10);
         populatingArray(arr100, 100);
-        populatingArray(arr1000, 1000);
-        populatingArray(arr10000, 10000);
-        populatingArray(arr100000, 100000);
+        populatingArray(arr1_000, 1_000);
+        populatingArray(arr10_000, 10_000);
+        populatingArray(arr100_000, 100_000);
 
         // Bubble
         System.out.println("10");
@@ -25,29 +25,29 @@ public class BubbleSort {
         System.out.println("100");
         startBubble(arr100);
         System.out.println("1000");
-        startBubble(arr1000);
+        startBubble(arr1_000);
         System.out.println("10000");
-        startBubble(arr10000);
+        startBubble(arr10_000);
         System.out.println("100000");
-        startBubble(arr100000);
+        startBubble(arr100_000);
 
         populatingArray(arr10, 10);
         populatingArray(arr100, 100);
-        populatingArray(arr1000, 1000);
-        populatingArray(arr10000, 10000);
-        populatingArray(arr100000, 100000);
+        populatingArray(arr1_000, 1_000);
+        populatingArray(arr10_000, 10_000);
+        populatingArray(arr100_000, 100_000);
 
         // Selection
         System.out.println("10");
         startSelection(arr10);
         System.out.println("100");
         startSelection(arr100);
-        System.out.println("1000");
-        startSelection(arr1000);
-        System.out.println("10000");
-        startSelection(arr10000);
-        System.out.println("100000");
-        startSelection(arr100000);
+        System.out.println("1_000");
+        startSelection(arr1_000);
+        System.out.println("10_000");
+        startSelection(arr10_000);
+        System.out.println("100_000");
+        startSelection(arr100_000);
     }
 
     private static void startSelection(int[] arr) {
